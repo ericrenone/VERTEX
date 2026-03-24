@@ -141,11 +141,25 @@ The **T-matrix** is diagonal with entries $T_{ii} = e^{2\pi i(h_i - c/24)}$.
 | Fixed point $\tau = i$: $S\tau = \tau$ | $\phi$-equilibrium: $\beta^* = 1/\log\phi$ (T-duality self-dual point) |
 | Conformal dimension $h$: $T_{ii} = e^{2\pi i(h-c/24)}$ | Fisher eigenvalue $\lambda$: $e^{-\beta\lambda}$ in Boltzmann weight |
 
-The S-transformation fixed point $\tau = i$ (where $S\tau = -1/i = i$) is the $\phi$-equilibrium: at $\tau = i$, i.e., $\beta^* = 2\pi$, the partition function is self-dual under the high-temperature/low-temperature exchange. At the deformed $\phi$-equilibrium $\beta^* = 1/\log\phi$:
+---
 
-$$Z(\beta^*) = Z(1/\beta^*) \cdot (\text{Jacobian}) \implies |\bar\Xi| = \log\phi$$
+**Two fixed points, one deformation.** The S-transformation $\tau \mapsto -1/\tau$ has a unique fixed point at $\tau = i$, since $-1/i = i$. In the thermal dictionary $\beta = -2\pi i\tau$ this corresponds to $\beta_{\text{S-fixed}} = 2\pi$ — the inverse temperature at which the partition function is exactly self-dual under $\beta \leftrightarrow 1/\beta$:
 
-The MEP fixed point is the S-transformation fixed point of the Fisher partition function.
+$$Z(2\pi) \;=\; Z\!\left(\tfrac{1}{2\pi}\right) \cdot (\text{volume factor})$$
+
+This is the **undeformed** fixed point of a free theory — a flat statistical manifold with no Gibbs constraint.
+
+The knowledge commons is not a free theory. It is an open dissipative system subject to the Gibbs constraint $Z(X;\beta) < \infty$. This constraint breaks the exact $\beta \leftrightarrow 1/\beta$ symmetry and deforms the fixed point. The deformed fixed-point equation becomes:
+
+$$\frac{\partial}{\partial\beta}\log Z\bigg|_{\,\beta = \beta^{{\vphantom{X}}*}} \;=\; -\log\phi$$
+
+whose unique solution is $\beta^* = 1/\log\phi$. At this point the expected Fisher eigenvalue equals $\log\phi$, and the entropy production split is $\bar\sigma_{\text{struct}}/\bar\sigma_{\text{behav}} = \phi$.
+
+The shift from the free fixed point to the Gibbs-deformed fixed point is:
+
+$$\Delta\beta \;=\; 2\pi \;-\; \frac{1}{\log\phi} \;\approx\; 6.28 - 2.08 \;=\; 4.20$$
+
+This **Gibbs deformation** is the quantitative measure of how far the knowledge commons sits from the free-theory self-dual point, pushed by the constraint that its partition function must be finite. The MEP fixed point $|\bar\Xi| = \log\phi$ is the S-transformation fixed point of the **constrained** Fisher partition function.
 
 ---
 
